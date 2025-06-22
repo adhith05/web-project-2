@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivandrum Tourism - God's Own Capital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Trivandrum Tourism</div>
+            <ul>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#book">Book Your Trip</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Experience the Magic of Trivandrum</h1>
+            <p>Discover pristine beaches, rich heritage, and vibrant traditions.</p>
+            <a href="#attractions" class="btn">Explore Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="attractions" class="attractions-section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-grid">
+                <div class="attraction-card">
+                    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRz66KtIB1gksMWxRwVzHuUpx9XdvWMNgBrJRrmLddQ94csU-HFFbb_equrNZ7SMhgacNQMwQQqKFFta_zSmwaq-Ouj_bxoLc4kLwwuxQ" alt="Kovalam Beach">
+                    <div class="card-content">
+                        <h3>Kovalam Beach</h3>
+                        <p>Relax on the crescent-shaped beaches of Kovalam, a popular sun-bathing spot.</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img src="https://www.remotelands.com/travelogues/app/uploads/2020/02/Padmanabhaswamy-1.jpg" alt="Padmanabhaswamy Temple">
+                    <div class="card-content">
+                        <h3>Padmanabhaswamy Temple</h3>
+                        <p>Explore the intricate architecture and spiritual aura of this ancient Vishnu temple.</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img src="https://www.ayurwakeup.com/wp-content/uploads/2023/07/napier.jpg" alt="Napier Museum">
+                    <div class="card-content">
+                        <h3>Napier Museum & Zoo</h3>
+                        <p>Step into history at this architectural marvel housing ancient artifacts and a sprawling zoo.</p>
+                    </div>
+                </div>
+                <div class="attraction-card">
+                    <img src="https://www.captureatrip.com/_next/image?url=https%3A%2F%2Fcaptureatrip-cms-storage.s3.ap-south-1.amazonaws.com%2FThings_to_do_in_poovar_7a3a1dd998.webp&w=3840&q=50&dpl=dpl_3MVnnWaPQGsg1h7Q2eqSonCyRsfj" alt="Poovar Island">
+                    <div class="card-content">
+                        <h3>Poovar Island</h3>
+                        <p>Enjoy tranquil backwaters, golden sand beaches, and estuary cruises.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="culture" class="culture-section">
+            <h2>Local Culture & Experiences</h2>
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <img src="https://www.robinage.com/wp-content/uploads/2022/09/Kathakali-800x534.jpg" alt="Kathakali Dance">
+                    <div class="card-content">
+                        <h3>Kathakali Performance</h3>
+                        <p>Witness the vibrant storytelling of Kerala's traditional dance-drama.</p>
+                    </div>
+                </div>
+                <div class="culture-card">
+                    <img src="https://ansevents.in/assets/images/kerala_kitchen.jpg" alt="Kerala Cuisine">
+                    <div class="card-content">
+                        <h3>Authentic Kerala Cuisine</h3>
+                        <p>Savor the flavors of Sadya, fresh seafood, and traditional curries.</p>
+                    </div>
+                </div>
+                <div class="culture-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL1TSh07l0Q-0gmnZ-k_fXnBU6GXQFgSWaug&s" alt="Ayurveda Treatment">
+                    <div class="card-content">
+                        <h3>Ayurvedic Wellness</h3>
+                        <p>Rejuvenate your mind and body with ancient Ayurvedic treatments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="book" class="booking-section">
+            <h2>Book Your Dream Trip</h2>
+            <p>Ready to explore Trivandrum? Fill out the form below to plan your itinerary!</p>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="travel-date">Preferred Travel Date:</label>
+                    <input type="date" id="travel-date" name="travel-date">
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Travelers:</label>
+                    <input type="number" id="guests" name="guests" min="1" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="interest">Areas of Interest:</label>
+                    <select id="interest" name="interest">
+                        <option value="all">All Attractions</option>
+                        <option value="beaches">Beaches</option>
+                        <option value="heritage">Heritage & Temples</option>
+                        <option value="backwaters">Backwaters</option>
+                        <option value="wellness">Wellness & Ayurveda</option>
+                        <option value="culture">Culture & Arts</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Any Special Requests?</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Inquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Trivandrum Tourism. All rights reserved.</p>
+            <div class="contact-info" id="contact">
+                <p>Email: info@trivandrumtourism.in</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<style>
+    /* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8; /* Light background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1500x800?text=Trivandrum+Hero+Image') no-repeat center center/cover;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    position: relative;
+    height: 60vh; /* Make hero section taller */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5%;
+    background-color: rgba(0, 0, 0, 0.3); /* Slightly transparent nav bar */
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold on hover */
+}
+
+.hero {
+    flex-grow: 1; /* Allows it to take available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff; /* A nice blue for buttons */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* Subtle lift effect */
+}
+
+/* Main Content Sections */
+main {
+    padding: 20px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 4em;
+    padding: 2em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #2c3e50; /* Dark blue-grey for headings */
+    text-align: center;
+    margin-bottom: 1.5em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #007bff;
+    border-radius: 2px;
+}
+
+/* Attraction and Culture Grids (Responsive) */
+.attraction-grid, .culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.attraction-card, .culture-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.attraction-card:hover, .culture-card:hover {
+    transform: translateY(-10px) scale(1.02); /* Lift and slightly enlarge */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.attraction-card img, .culture-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.attraction-card:hover img, .culture-card:hover img {
+    transform: scale(1.05); /* Zoom effect on image */
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Booking Form */
+.booking-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50; /* Dark blue-grey */
+    color: white;
+    text-align: center;
+    padding: 2em 5%;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Responsive Design (Media Queries) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .attraction-grid, .culture-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    section {
+        padding: 1.5em;
+    }
+
+    .booking-form {
+        padding: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
+</html>
